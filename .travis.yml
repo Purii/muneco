@@ -1,24 +1,24 @@
 language: php
 
- php:
-     - 5.4
-     - 5.5
+php:
+  - 5.5
+  - 5.4
 
- env:
-     - WP_VERSION=latest WP_MULTISITE=1
-     - WP_VERSION=4.0 WP_MULTISITE=1
+env:
+ - WP_VERSION=latest WP_MULTISITE=1
+ - WP_VERSION=4.0 WP_MULTISITE=1
 
- matrix:
-     include:
-         - php: 5.3
-           env: WP_VERSION=latest WP_MULTISITE=1
-         - php: 5.6
-           env: WP_VERSION=latest WP_MULTISITE=1
-     allow_failures:
-         - php: hhvm
-           env: WP_VERSION=latest WP_MULTISITE=1
+matrix:
+ include:
+  - php: 5.3
+    env: WP_VERSION=latest WP_MULTISITE=1
+  - php: 5.6
+    env: WP_VERSION=latest WP_MULTISITE=1
+ allow_failures:
+  - php: hhvm
+    env: WP_VERSION=latest WP_MULTISITE=1
 
- before_script:
-     - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
+before_script:
+ - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
 
- script: phpunit
+script: phpunit
