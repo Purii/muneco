@@ -1,0 +1,23 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="tests/phpunit/includes/bootstrap.php"
+        >
+    <php>
+        <const name="WP_TESTS_MULTISITE" value="1"/>
+    </php>
+    <testsuites>
+        <testsuite>
+            <directory suffix=".php">tests/phpunit/tests/</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="junit" target="/tests/phpunit/build/logs/junit.xml" logIncompleteSkipped="false"/>
+    </logging>
+</phpunit>

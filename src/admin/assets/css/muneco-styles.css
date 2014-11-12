@@ -1,0 +1,191 @@
+/**
+ * @author    Patrick Puritscher
+ * @license   GPL-2.0+
+ * @link      -
+ * @copyright 2014 Patrick Puritscher
+ */
+/**** Edit ****/
+#post-body .misc-pub-post-connections > #display-post-connections:before {
+    content: '\f103';
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    left: -1px;
+    padding: 0 5px 0 0;
+    position: relative;
+    top: 0;
+    text-decoration: none !important;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #888;
+}
+
+#post-body .misc-pub-post-connections > #display-post-connections {
+    padding: 2px 0 1px;
+    display: inline !important;
+    height: auto !important;
+}
+
+/** Thickbox **/
+#tb-connectedpage-container .connectionbox {
+    margin: 20px 0px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    position: relative;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Same variable as .connectionblock */
+#tb-connectedpage-container .connectionbox.complete h3 {
+
+    border-left: 4px solid #7ad03a;
+    background-color: #FAFFF7;
+    text-align: left;
+}
+
+#tb-connectedpage-container .connectionbox.incomplete h3 {
+    border-left: 4px solid #f0ad4e;
+    background-color: #fcf8f2;
+}
+
+#tb-connectedpage-container .connectionbox h3 {
+    line-height: 1.2em;
+    padding: 9px 12px;
+    font-size: 1.2em;
+    color: rgb(80, 80, 80);
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tb-connectedpage-container .connectionbox.complete h3 > span {
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+#tb-connectedpage-container .connectionbox.incomplete h3 > span {
+    display: none;
+}
+
+#tb-connectedpage-container .connectionbox .inside {
+    margin: 0px 0px 10px 0px;
+}
+
+#tb-connectedpage-container .connectionbox label.post-connection {
+    margin-left: 0;
+    display: inline-block;
+    line-height: 2.3em;
+    color: #222;
+    width: 100%;
+    text-indent: 15px;
+}
+
+#tb-connectedpage-container .connectionbox .muneco-search {
+    padding: 10px 20px;
+    background: rgba(233, 233, 233, 0.61);
+
+}
+
+#tb-connectedpage-container .connectionbox .muneco-search label {
+    width: 100%;
+    display: inline-block;
+}
+
+#tb-connectedpage-container .connectionbox .muneco-search .search-label {
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+}
+
+#tb-connectedpage-container .connectionbox .muneco-search input {
+    width: 80%;
+}
+
+/** /Thickbox **/
+/**** /Edit ****/
+/**** Networkadmin ****/
+.modules tr > td.modulename,
+.sites tr > td {
+    vertical-align: middle;
+}
+
+.modules tr > td.modulename > span,
+.sites tr > td.blogname > span {
+    font-size: 14px;
+}
+
+.modules tr.active > td.modulename > span,
+.sites tr.active > td.blogname > span {
+    font-weight: bold;
+}
+
+/** /Networkadmin **/
+/**** MODULES ****/
+.MuNeCo-overview-liquid-left {
+    width: 60%;
+    float: left;
+    min-width: 320px;
+}
+
+.MuNeCo-overview-liquid-right {
+    width: 40%;
+    float: right;
+}
+
+@media screen and (max-width: 480px) {
+    .MuNeCo-overview-liquid-left,
+    .MuNeCo-overview-liquid-right {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+.connectionblock {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 1;
+}
+
+.connectionblock .inside {
+    margin: 5px 0;
+    position: relative;
+    padding: 0 12px 12px;
+    line-height: 1.4em;
+    font-size: 13px;
+}
+
+.connectionblock h3 {
+    line-height: 1.7em;
+    padding: 9px 12px;
+    font-size: 1.3em;
+    color: rgb(80, 80, 80);
+    margin: 0;
+    text-align: center;
+}
+
+.connectionblock.complete {
+    background: rgb(46, 204, 113);
+    background: rgba(46, 204, 113, 0.69);
+}
+
+.connectionblock.incomplete {
+    background: rgb(243, 198, 18);
+    background: rgba(252, 201, 0, 0.46);
+}
+
+.connectionblock ul li.missing {
+    background: rgba(250, 250, 250, 0.68);
+}
+
+/**** MODULES ****/

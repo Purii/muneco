@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MuNeCo\n"
+"POT-Creation-Date: 2014-03-19 10:49+0100\n"
+"PO-Revision-Date: 2014-03-19 10:49+0100\n"
+"Last-Translator: \n"
+"Language-Team: Patrick\n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc/requirements.class.php:83
+msgid "Please uninstall MuNeCo properly using the Plugin-Manager"
+msgstr ""
+
+#: ../rootmodules/edit/templates/publishbox.template.php:5
+msgid "Connections"
+msgstr ""
+
+#: ../rootmodules/edit/templates/publishbox.template.php:7
+msgid "Connect"
+msgstr ""
+
+#: ../rootmodules/edit/templates/publishbox.template.php:30
+msgid "OK "
+msgstr ""
+
+#: ../rootmodules/edit/templates/publishbox.template.php:32
+#: ../rootmodules/edit/templates/thickbox.template.php:60
+msgid "Cancel"
+msgstr ""
+
+#: ../rootmodules/edit/templates/thickbox.template.php:5
+msgid "Please choose the elements you want to connect"
+msgstr ""
+
+#: ../rootmodules/edit/templates/thickbox.template.php:15
+msgid "Click to toggle"
+msgstr ""
+
+#: ../rootmodules/edit/templates/thickbox.template.php:46
+msgid "Not connected"
+msgstr ""
+
+#: ../rootmodules/edit/templates/thickbox.template.php:50
+msgid "No Connection"
+msgstr ""
+
+#: ../rootmodules/edit/templates/thickbox.template.php:58
+msgid "Update Connection"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/message.template.php:10
+msgid "MuNeCo has been updated!"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/modules.template.php:5
+msgid "Modules"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/modules.template.php:14
+#: ../rootmodules/networkadmin/templates/modules.template.php:23
+msgid "Module"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/modules.template.php:16
+#: ../rootmodules/networkadmin/templates/modules.template.php:25
+#: ../rootmodules/networkadmin/templates/sites.template.php:22
+#: ../rootmodules/networkadmin/templates/sites.template.php:30
+msgid "Status"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/modules.template.php:42
+msgid "Activate"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/modules.template.php:44
+msgid "Deactivate"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/sites.template.php:11
+msgid "Manage Sites"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/sites.template.php:21
+#: ../rootmodules/networkadmin/templates/sites.template.php:29
+msgid "Language"
+msgstr ""
+
+#: ../rootmodules/networkadmin/templates/sites.template.php:50
+msgid "Enable Connections"
+msgstr ""

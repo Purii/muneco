@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MuNeCo_v1\n"
+"POT-Creation-Date: 2014-10-11 18:36+0100\n"
+"PO-Revision-Date: 2014-10-11 18:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../coremodules/edit/templates/publishbox-template.php:15
+msgid "Connections"
+msgstr "Verküpfungen"
+
+#: ../coremodules/edit/templates/publishbox-template.php:18
+msgid "Connect"
+msgstr "Verknüpfen"
+
+#: ../coremodules/edit/templates/publishbox-template.php:38
+msgid "Please choose the elements you want to connect"
+msgstr "Bitte wählen Sie die zu verknüpfenden Elemente"
+
+#: ../coremodules/edit/templates/publishbox-template.php:45
+msgid "OK "
+msgstr ""
+
+#: ../coremodules/edit/templates/publishbox-template.php:47
+#: ../coremodules/edit/templates/thickbox-template.php:19
+msgid "Cancel"
+msgstr ""
+
+#: ../coremodules/edit/templates/thickbox-template.php:17
+msgid "Update Connections"
+msgstr "Verknüpfungen aktualisieren"
+
+#: ../coremodules/edit/templates/thickbox-template.php:45
+msgid "Search"
+msgstr ""
+
+#: ../coremodules/edit/templates/thickbox-template.php:86
+msgid "Not connected"
+msgstr "Nicht verknüpft"
+
+#: ../coremodules/edit/templates/thickbox-template.php:90
+msgid "No Connection"
+msgstr "Keine Verknüpfung"
+
+#: ../coremodules/networkadmin/templates/message-template.php:10
+msgid "MuNeCo has been updated!"
+msgstr "MuNeCo wurde aktualisiert!"
+
+#: ../coremodules/networkadmin/templates/modules-template.php:13
+msgid "Modules"
+msgstr "Module"
+
+#: ../coremodules/networkadmin/templates/modules-template.php:20
+msgid "No Modules found"
+msgstr "Keine Module gefunden"
+
+#: ../coremodules/networkadmin/templates/modules-template.php:29
+#: ../coremodules/networkadmin/templates/modules-template.php:38
+msgid "Module"
+msgstr "Modul"
+
+#: ../coremodules/networkadmin/templates/modules-template.php:31
+#: ../coremodules/networkadmin/templates/modules-template.php:40
+#: ../coremodules/networkadmin/templates/sites-template.php:30
+#: ../coremodules/networkadmin/templates/sites-template.php:38
+msgid "Status"
+msgstr ""
+
+#: ../coremodules/networkadmin/templates/modules-template.php:62
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: ../coremodules/networkadmin/templates/modules-template.php:64
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: ../coremodules/networkadmin/templates/sites-template.php:19
+msgid "Manage Sites"
+msgstr "Seiten verwalten"
+
+#: ../coremodules/networkadmin/templates/sites-template.php:29
+#: ../coremodules/networkadmin/templates/sites-template.php:37
+msgid "Language"
+msgstr "Sprache"
+
+#: ../coremodules/networkadmin/templates/sites-template.php:66
+msgid "Enable Connections"
+msgstr "Verknüpfungen aktivieren"
+
+#: ../coremodules/networkadmin/templates/sites-template.php:69
+msgid "Not marked as public"
+msgstr "Nicht als öffentlich markiert"
+
+#: ../inc/requirements-class.php:83
+msgid "Please uninstall MuNeCo properly using the Plugin-Manager"
+msgstr "Bitte deinstallieren Sie MuNeCo mithilfe des Plugin-Managers"
