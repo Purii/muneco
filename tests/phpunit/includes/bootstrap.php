@@ -2,12 +2,13 @@
 
 
 $wp_tests_dir = getenv( 'WP_TESTS_DIR' );
+$plugin_dir = getenv( 'TRAVIS_BUILD_DIR' );
 if ( ! $wp_tests_dir ) {
 	$wp_tests_dir = '/tmp/wordpress-tests-lib';
 }
 require_once $wp_tests_dir . '/includes/functions.php';
 function _manually_load_plugin() {
-	require dirname( __FILE__ ) . '/../muneco.php';
+	require dirname( __FILE__ ) . '/../../src/muneco.php';
 	perform_activation();
 }
 
