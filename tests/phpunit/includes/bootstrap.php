@@ -8,6 +8,8 @@ if ( ! $wp_tests_dir ) {
 }
 require_once $wp_tests_dir . '/includes/functions.php';
 function _manually_load_plugin() {
+	echo "Plugindir: $plugin_dir";
+	echo 'Dirname:' . dirname( __FILE__ );
 	require dirname( __FILE__ ) . '/../../src/muneco.php';
 	perform_activation();
 }
