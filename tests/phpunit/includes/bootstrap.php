@@ -11,7 +11,7 @@ function _manually_load_plugin() {
 	perform_activation();
 }
 
-require $_tests_dir . '/includes/bootstrap.php';
+require $wp_tests_dir . '/includes/bootstrap.php';
 
 
 /* Local
