@@ -19,5 +19,18 @@ matrix:
 
 before_script:
  - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
+ - npm install -g grunt-cli
+ - grunt build
 
 script: phpunit
+
+after_success:
+ - grunt dist
+
+ env:
+   global:
+     - "FTP_USER=user"
+     - "FTP_PASSWORD=password"
+ after_success:
+     "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_Dmuneco.zip"
+
