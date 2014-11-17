@@ -1,7 +1,6 @@
 language: php
 
 php:
-  - 5.3
   - 5.4
   - 5.5
 
@@ -11,6 +10,8 @@ env:
 
 matrix:
  include:
+  - php: 5.3
+    env: WP_VERSION=latest WP_MULTISITE=1 DEPLOY_AFTER=TRUE
   - php: 5.6
     env: WP_VERSION=latest WP_MULTISITE=1
  allow_failures:
@@ -28,5 +29,5 @@ script: phpunit
 
 after_success:
  - grunt dist
- - if [[ "$WP_VERSION" == "latest" ]]; then "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip"; fi
+ - if [[ "$DEPLOY_AFTER" == "true" ]]; then "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip"; fi
 
