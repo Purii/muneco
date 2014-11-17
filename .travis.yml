@@ -28,5 +28,5 @@ script: phpunit
 
 after_success:
  - grunt dist
- - "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_Dmuneco.zip"
+ - "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip"
 
