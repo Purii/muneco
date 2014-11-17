@@ -1,6 +1,7 @@
 {
     "name": "muneco",
     "version": "0.2.0",
+    "private": true,
     "description": "",
     "author": "Patrick Puritscher <blackout289@gmail.com>",
     "licence": "GPL v2 or later",
