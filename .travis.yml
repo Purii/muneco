@@ -18,8 +18,9 @@ matrix:
     env: WP_VERSION=latest WP_MULTISITE=1
 
 before_script:
+ - composer install
  - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
- - npm install -g grunt-cli
+ - npm install
  - grunt build
 
 script: phpunit
