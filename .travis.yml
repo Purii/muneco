@@ -27,5 +27,5 @@ before_script:
 script: phpunit
 
 after_success:
- - grunt dist
+ - if [ ${DEPLOY_AFTER} = true ]; then  grunt dist; fi
  - if [ ${DEPLOY_AFTER} = true ]; then curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip; fi
