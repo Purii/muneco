@@ -119,8 +119,9 @@ class MuNeCo {
 		$namespaces = explode( "\\", $classwn );
 
 		if ( 'muneco' != $namespaces[0] ) {
-			return true;
+			return false;
 		}
+		//print_r($classwn);
 		$class = end( $namespaces );
 		if ( 'model' == $namespaces[1] ) {
 			$file = MUNECO_MODELPATH . $class . '-class.php';
@@ -167,7 +168,7 @@ class MuNeCo {
 			}
 		}
 
-		return true;
+		return false;
 	}
 
 
