@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     var path = require('path'),
         SOURCE_DIR = 'src/',
         BUILD_DIR = 'build/',
-        DIST_DIR = 'dist/';
+        DIST_DIR = 'dist/<%= pkg.name %>/';
 
     require('matchdep').filterDev('grunt-contrib-*', './package.json').forEach(grunt.loadNpmTasks);
 
