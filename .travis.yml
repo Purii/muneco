@@ -21,4 +21,4 @@ script: phpunit
 
 after_success:
  - grunt dist
- - bash deploy-toUpdateserver.sh $FTP_U $FTP_PW $FTP_D
+ - bash deploy-toUpdateserver.sh $FTP_U $FTP_P $FTP_D
