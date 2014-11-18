@@ -11,7 +11,7 @@
 ?>
 <?php
 foreach ( $connections_junctions as $connectedJunction ) {
-	echo '<link rel="alternate" href="' . $connectedJunction['junction']->permalink . '" hreflang="' . strtolower( $connectedJunction['junction']->languagecode ) . '" type="text/html">';
+	echo '<link rel="alternate" href="' . $connectedJunction->permalink . '" hreflang="' . strtolower( $connectedJunction->languagecode ) . '" type="text/html">';
 	echo "\n";
 }
 ?>

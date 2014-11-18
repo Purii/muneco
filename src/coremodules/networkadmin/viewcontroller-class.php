@@ -8,7 +8,7 @@
  * @link      -
  * @copyright 2014 Patrick Puritscher
  */
-namespace MuNeCo\coremodules\Networkadmin;
+namespace MuNeCo\coremodules\networkadmin;
 
 use MuNeCo\Model\Modulehandler;
 use MuNeCo\Model\Network;

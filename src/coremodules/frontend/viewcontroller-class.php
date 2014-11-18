@@ -8,7 +8,7 @@
  * @link      -
  * @copyright 2014 Patrick Puritscher
  */
-namespace MuNeCo\coremodules\Frontend;
+namespace MuNeCo\coremodules\frontend;
 
 use MuNeCo\Model\Junction;
 use MuNeCo\Model\Site;

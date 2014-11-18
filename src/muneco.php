@@ -5,7 +5,7 @@
  * Plugin URI: http://purii.github.io/MuNeCo
  * Author: Patrick Puritscher
  * Description: Add multilanguage support for networks.
- * Version: 0.2
+ * Version: 0.2.1
  * Network: true
  * Text Domain: MuNeCo
  * Requirements: PHP5.3 (Namespace) & Anonyme Funktionen

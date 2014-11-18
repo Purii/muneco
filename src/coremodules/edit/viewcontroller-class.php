@@ -8,7 +8,7 @@
  * @link      -
  * @copyright 2014 Patrick Puritscher
  */
-namespace MuNeCo\coremodules\Edit;
+namespace MuNeCo\coremodules\edit;
 
 use MuNeCo\Model\Junction;
 use MuNeCo\Model\Network;
