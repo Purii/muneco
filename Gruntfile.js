@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     var path = require('path'),
         SOURCE_DIR = 'src/',
         BUILD_DIR = 'build/',
-        DIST_DIR = 'dist/<%= pkg.name %>/';
+        DIST_DIR = 'dist/';
 
     require('matchdep').filterDev('grunt-contrib-*', './package.json').forEach(grunt.loadNpmTasks);
 
@@ -31,7 +31,8 @@ module.exports = function (grunt) {
                     },
                     expand: true,
                     cwd: BUILD_DIR,
-                    src: ['**']
+                    src: ['**'],
+                    dest: '<%= pkg.name %>/'
                 }
             },
             uglify: {
