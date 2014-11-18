@@ -30,5 +30,5 @@ script: phpunit
 after_success:
  - grunt dist
  - if [ "${$DEPLOY_AFTER}" = "TRUE" ]; then
-     "curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip";
+     bash deploy-updateserver.sh $FTP_U $FTP_P $FTP_D
    fi
