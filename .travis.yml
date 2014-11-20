@@ -3,29 +3,29 @@ language: php
 php:
   - 5.4
   - 5.5
+  - 5.3
   - 5.6
 
 env:
-  - WP_VERSION=latest WP_MULTISITE=1 DEPLOY_AFTER=false
-  - WP_VERSION=4.0 WP_MULTISITE=1 DEPLOY_AFTER=false
+  - WP_VERSION=latest WP_MULTISITE=1 WP_VERSION_CURRENT=4.0
+  - WP_VERSION=4.0 WP_MULTISITE=1 WP_VERSION_CURRENT=4.0
 
 matrix:
- include:
-  - php: 5.3
-    env: WP_VERSION=latest WP_MULTISITE=1 DEPLOY_AFTER=true
  allow_failures:
-  - php: hhvm
+  - php: 5.6
     env: WP_VERSION=latest WP_MULTISITE=1 DEPLOY_AFTER=false
 
-before_script:
+install:
  - composer install
- - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
  - npm install -g grunt-cli
  - npm install
  - grunt build
 
+before_script:
+ - bash setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
+
 script: phpunit
 
 after_success:
- - if [ ${DEPLOY_AFTER} = true ]; then  grunt dist; fi
- - if [ ${DEPLOY_AFTER} = true ]; then curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip; fi
+ - if [ ${TRAVIS_PHP_VERSION} = true ] && [ ${WP_VERSION} = ${WP_VERSION_CURRENT} ]; then  grunt dist; fi
+ - if [ ${TRAVIS_PHP_VERSION} = true ] && [ ${WP_VERSION} = ${WP_VERSION_CURRENT} ]; then curl --ftp-create-dirs -T dist/muneco.zip -u $FTP_U:$FTP_P ftp://$FTP_D/muneco.zip; fi
