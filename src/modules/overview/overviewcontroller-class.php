@@ -3,7 +3,7 @@
  * Module Name: Overview
  * Author: Patrick Puritscher
  * Version: 0.1
- * Description: This Module is still under development. Not refactored!
+ * Description: This Module is still under development. Already refactored!
  * Pro: false
  * Copyright: 2014 Patrick Puritscher
  */

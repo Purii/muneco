@@ -11,11 +11,11 @@ echo "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">';
 echo "\n";
-echo $set_nodes_post;
+echo $xml_all_blocksPosts;
 echo "\n";
-echo $set_notconnected_post;
+echo $xml_all_blocksPages;
 echo "\n";
-echo $set_nodes_page;
+echo $xml_all_notconnectedPosts;
 echo "\n";
-echo $set_notconnected_page;
+echo $xml_all_notconnectedPages;
 echo '</urlset>';

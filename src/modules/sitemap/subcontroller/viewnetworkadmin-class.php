@@ -58,8 +58,6 @@ class ViewNetworkadmin {
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 		echo '<h2>' . __( 'Sitemap', 'muneco' ) . '</h2>';
 		echo $this->render_templateMessage();
-
-		return true;
 	}
 
 

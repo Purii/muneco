@@ -114,6 +114,7 @@ class MuNeCo {
 	 * @return bool
 	 */
 	private function autoload( $classwn ) {
+		//var_dump($classwn);
 		// Class With Namespace
 		$classwn    = strtolower( $classwn );
 		$namespaces = explode( "\\", $classwn );
