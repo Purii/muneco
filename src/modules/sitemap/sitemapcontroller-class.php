@@ -91,13 +91,13 @@ class SitemapController implements IFpresenter {
 			$this,
 			'printPage'
 		) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 	}
 
 	/**
 	 * Load the correct VIEW and append the data
 	 */
 	public function printPage() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 		echo '<h2>' . __( 'Sitemap', 'muneco' ) . ' </h2>';
 		echo $this->render_templateSettingspage();
 	}

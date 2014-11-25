@@ -49,6 +49,7 @@ class OverviewController implements IFpresenter {
 			$this,
 			'printPage'
 		) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 	}
 
 
@@ -96,8 +97,6 @@ class OverviewController implements IFpresenter {
 	 * Load the correct VIEW and append the data
 	 */
 	public function printPage() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
-
 		echo '<h2>' . __( 'Overview', 'muneco' ) . ' - ' . strtoupper( 'posts' ) . '</h2>';
 
 

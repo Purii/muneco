@@ -95,6 +95,7 @@ class ViewController {
 			&$this,
 			'printPage'
 		), 'dashicons-admin-links' );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 		do_action( 'muneco_networkadmin_addsubpage' );
 	}
 
@@ -150,8 +151,6 @@ class ViewController {
 	 * Print the page
 	 */
 	public function printPage() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
-
 		if ( isset( $_GET['message'] ) && ! empty( $_GET['message'] ) ) {
 			$self = $this;
 			add_action(
