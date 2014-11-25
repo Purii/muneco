@@ -1,8 +1,9 @@
 language: php
 
 cache:
- - composer
- - npm
+ directories:
+  - vendor
+  - node_modules
 
 php:
   - 5.4
