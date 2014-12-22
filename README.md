@@ -1,5 +1,5 @@
 # muneco - A WordPress Plugin
-[![Build Status](https://magnum.travis-ci.com/Purii/muneco.svg?token=qdXLSA5Q7qrhqsnmh1sw&branch=master)](https://magnum.travis-ci.com/Purii/muneco)
+[![Build Status](https://travis-ci.org/Purii/muneco.svg?branch=master)](https://travis-ci.org/Purii/muneco)
 
 ## Project
 The Plugin is still under development and not ready for production. The development is really time consuming, so I wanted to share the current state and invite you to do some pull requests. It would be also great if there will be some useful feedback!
