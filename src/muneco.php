@@ -2,8 +2,9 @@
 
 /**
  * Plugin Name: MuNeCo
- * Plugin URI: http://purii.github.io/MuNeCo
+ * Plugin URI: https://github.com/Purii/muneco
  * Author: Patrick Puritscher
+ * Author URI: patrickpuritscher.com
  * Description: Add multilanguage support for networks.
  * Version: 0.2.2
  * Network: true
