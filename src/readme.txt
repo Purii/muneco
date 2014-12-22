@@ -1,23 +1,23 @@
-=== MuNeCo ===
+=== muneco ===
 Contributors: Yayoo
-Tags: multilanguage, multilingual, network, multisite, connector, seo, sitemap, google, MuNeCo
+Tags: multilanguage, multilingual, network, multisite, connector, seo, sitemap, google, muneco
 Requires at least: 3.8.1
 Tested up to: 4.0
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-MuNeCo supports you managing a multilingual WordPress instance using a Network.
+muneco supports you managing a multilingual WordPress instance using a Network.
 
 
 == Description ==
 
-MuNeCo is still under development.
+muneco is still under development.
 It would be great if there will be some useful feedback!
 
-MuNeCo extends your WP-Network without manipulating the whole behaviour of the system. It can get activated or deactivated on the fly without destroying anything.
+muneco extends your WP-Network without manipulating the whole behaviour of the system. It can get activated or deactivated on the fly without destroying anything.
 
-Discover what MuNeCo can currently do for you:
+Discover what muneco can currently do for you:
 
 * Connect Posts, Pages and Custom Post Types(in development) across the network
 * Defining different language codes for Back- & Frontend
@@ -26,11 +26,11 @@ Discover what MuNeCo can currently do for you:
 * Recognize transitive connections
 
 
-The modular architecture is a fantastic feature of MuNeCo. Making it most flexible on doing it's job and gives you real control.
+The modular architecture is a fantastic feature of muneco. Making it most flexible on doing it's job and gives you real control.
 
-Every developer is invited contributing new modules or extending current ones. Have a look at the Overview module to get inspired by the Architecture.
+Every developer is invited contributing new modules or extending current ones. Have a look at the Overview module to get inspired by the architecture.
 
-= Available Modules =
+= Currently available Modules =
 
 *	Sitemap
 Provides a multilingual XML-Sitemap (/sitemap.xml) - ready for Google
@@ -39,7 +39,7 @@ Provides a multilingual XML-Sitemap (/sitemap.xml) - ready for Google
 Provides an overview of your Connections
 
 
-= Planned Features =
+= Currently planned Modules =
 
 * Support for MO-Files to translate static text
 
