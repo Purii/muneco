@@ -58,7 +58,11 @@ final class Site {
 
 	public function getLanguagecode() {
 		if ( null == $this->blogID ) {
-			return get_option( 'muneco_languagecode' );
+			$languagecode =get_option( 'muneco_languagecode' );
+			if( false == $languagecode ) {
+				$languagecode = get_option( 'muneco_languagecode' );
+			}
+			return $languagecode;
 		}
 		switch_to_blog( $this->blogID );
 		$languagecode = get_option( 'muneco_languagecode' );
