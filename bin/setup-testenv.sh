@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -ev
 if [ $# -lt 3 ]; then
 	echo "usage: $0 <db-name> <db-user> <db-pass> [db-host] [wp-version]"
 	exit 1
