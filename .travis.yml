@@ -30,7 +30,7 @@ install:
  - grunt build
 
 before_script:
- - ./bin/setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
+ - bash ./bin/setup-testenv.sh wordpress_test root '' localhost $WP_VERSION
 
 script: phpunit
 
