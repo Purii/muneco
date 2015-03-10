@@ -1,4 +1,4 @@
-# muneco - A WordPress Plugin
+# muneco - A WP-Plugin to support you managing a multilingual WordPress instance using a Network
 [![Build Status](https://travis-ci.org/Purii/muneco.svg?branch=master)](https://travis-ci.org/Purii/muneco)
 
 ## Project
@@ -31,3 +31,20 @@ Provides an overview of your Connections
 ### Currently planned Modules
 
 * Support for MO-Files to translate static text
+
+## Installation
+
+### Prerequisites
+* You need a running WordPress Network
+
+### Installation from the repository
+**You need GRUNT to build the zip-file**   
+1.  Download the whole project   
+2.  Run *grunt dist*  
+2.  Install plugin through the Network-Admin by uploading the resulting zip of /dist   
+3.  Activate through Network-Admin   
+
+### Installation from repository - uncompressed files
+1. Download the whole project   
+2. Install the plugin through the Network-Admin by uploading /src to /wp-content/plugins/muneco   
+3. Activate through Network-Admin   
