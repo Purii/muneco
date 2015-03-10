@@ -57,7 +57,7 @@ module.exports = function (grunt) {
     );
 // Default task(s).
     grunt.registerTask('build', ['copy:build', 'uglify:build', 'cssmin:build']);
-    grunt.registerTask('dist', ['compress:dist']);
+    grunt.registerTask('dist', ['build', 'compress:dist']);
 
 };
 
