@@ -10,7 +10,7 @@
  */
 ?>
 <?php
-foreach ( $connections_junctions as $connectedJunction ) {
+foreach ( $connections_junctions_sorted as $connectedJunction ) {
 	echo '<link rel="alternate" href="' . $connectedJunction->permalink . '" hreflang="' . strtolower( $connectedJunction->languagecode ) . '" type="text/html">';
 	echo "\n";
 }

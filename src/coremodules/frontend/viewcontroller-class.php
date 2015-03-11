@@ -42,12 +42,19 @@ class ViewController {
 		$currentSite           = new Site( $currentBlogID );
 		$currentJunction       = new Junction( $currentBlogID, $currentPostID );
 		$connections_junctions = $currentJunction->getConnections_Junctions();
+		$connections_junctions_sorted = array();
+		// Sort out trashed junctions
+		foreach( $connections_junctions as $bid => $connectedJunction ) {
+			if( $connectedJunction->post_status != 'trash' ) {
+				$connections_junctions_sorted[$bid] = $connectedJunction;
+			}
+		}
 		/* Only run if singlepost and has connections and is enabled */
 		if (
 			! $currentSite->getMunecostatus()
 			|| ! is_singular()
 			|| get_the_ID() === null
-			|| $connections_junctions < 1
+			|| $connections_junctions_sorted < 1
 		) {
 			return true;
 		}
