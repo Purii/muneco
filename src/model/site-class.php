@@ -265,7 +265,7 @@ final class Site {
 			return $returnNotConnected;
 		}
 
-		return false;
+		return array();
 	}
 
 

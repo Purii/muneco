@@ -44,7 +44,6 @@ class ViewDefault {
 		$currentJunction = new Junction( $blogID, $postID );
 		$singleNetwork   = new Network();
 		$enabledSites    = $singleNetwork->getMunecoEnabledSites( true );
-
 		$connections_junctions = $currentJunction->getConnections_Junctions( true );
 		unset( $currentJunction );
 		unset( $singleNetwork );
@@ -64,7 +63,7 @@ class ViewDefault {
 		$currentJunction = new Junction( $blogID, $postID );
 		$singleNetwork   = new Network();
 
-		$connections_junctions = $currentJunction->getConnections_Junctions( true );
+		$connectedJunctions = $currentJunction->getConnections_Junctions( true );
 		$enabledSites          = $singleNetwork->getMunecoEnabledSites( true );
 
 		$allPosts = array();
@@ -72,9 +71,15 @@ class ViewDefault {
 			$thissite                   = new Site( $site->blog_id );
 			$allPosts[ $site->blog_id ] = $thissite->getJunctions( true, 'post' );
 		}
+
+		// Added current connected junctions
+		foreach( $connectedJunctions as $connectedBlogID => $connectedJunction ) {
+			array_push($allPosts[ $connectedBlogID ], $connectedJunction);
+		}
+
+
 		unset( $currentJunction );
 		unset( $singleNetwork );
-
 
 		add_thickbox();
 		ob_start();

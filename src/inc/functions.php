@@ -1,5 +1,5 @@
 <?php
-namespace MuNeCo;
+namespace muneco;
 	/**
 	 * General functions which belong to none Class
 	 *

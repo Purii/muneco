@@ -36,7 +36,16 @@
 						"> <a
 						href="#TB_inline?width=500&height=300&inlineId=tb-connectedpage"
 						class="thickbox post-connection-previewtext"
-						title="<?php _e( 'Please choose the elements you want to connect', 'muneco' ); ?>"> <?php echo( isset( $connections_junctions[ $site->blog_id ] ) ? $connections_junctions[ $site->blog_id ]->post_title : __( 'Not connected', 'muneco' ) ); ?>
+						title="<?php _e( 'Please choose the elements you want to connect', 'muneco' ); ?>">
+						<?php if( isset( $connections_junctions[ $site->blog_id ] ) ): ?>
+							<?php echo $connections_junctions[ $site->blog_id ]->post_title; ?>
+							<?php if($connections_junctions[ $site->blog_id ]->post_status == 'trash') {
+								echo "[" . __( 'trashed', 'muneco') . "]";
+							}
+							?>
+						<?php else: ?>
+							<?php echo __( 'Not connected', 'muneco' ); ?>
+						<?php endif; ?>
 					</a>
 				</li>
 			<?php endforeach; ?>
