@@ -38,7 +38,12 @@
 					<h3 class="muneco-expand-toggle">
 						<?php echo $site->languagecode; ?>
 						<?php if ( isset( $connectedJunctions[ $site->blog_id ] ) ) : ?>
-							<span><?php echo $connectedJunctions[ $site->blog_id ]->post_title; ?></span>
+							<span><?php echo $connectedJunctions[ $site->blog_id ]->post_title; ?>
+								<?php if($connectedJunctions[ $site->blog_id ]->post_status == 'trash') {
+									echo "[" . __( 'trashed', 'muneco') . "]";
+								}
+								?>
+							</span>
 						<?php endif; ?>
 					</h3>
 
@@ -69,6 +74,10 @@
 										&mdash;
 									<?php endfor; ?>
 									<?php echo $listelm->post_title; ?>
+									<?php if($listelm->post_status == 'trash') {
+										echo "[" . __( 'trashed', 'muneco') . "]";
+									}
+									?>
 								</label><br>
 							<?php endforeach; ?>
 						<?php endif; ?>
