@@ -21,7 +21,7 @@ matrix:
  fast_finish: true
  allow_failures:
   - php: 5.6
-    env: WP_VERSION=latest WP_MULTISITE=1 DEPLOY_AFTER=false
+    env: WP_VERSION=latest WP_MULTISITE=1
 
 install:
  - composer install
